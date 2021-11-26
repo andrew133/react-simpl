@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd0bbb24-d1fd-49f4-93f7-e2d5d7db2a21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Accordion/UncontrolledAccordion.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Accordion/Accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Accordion/Accordion.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rating/Rating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OnOff/OnOff.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Accordion" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,6 +45,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IT-INCUBATOR\react-simpl\src\Accordion" />
+    </key>
     <key name="es6.move.members.recent.items">
       <recent name="F:\IT-INCUBATOR\react-simpl\src\components\Rating\Rating.tsx" />
     </key>
@@ -80,7 +81,7 @@
       <workItem from="1637765677000" duration="164000" />
       <workItem from="1637765884409" duration="1783000" />
       <workItem from="1637866853507" duration="9524000" />
-      <workItem from="1637935733322" duration="3529000" />
+      <workItem from="1637935733322" duration="14025000" />
     </task>
     <servers />
   </component>
