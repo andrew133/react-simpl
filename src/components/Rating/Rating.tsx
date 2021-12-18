@@ -1,15 +1,14 @@
 import React from "react";
 
-export type RatingValueTape = 0 | 1 | 2 | 3 | 4 | 5
+export type RatingValueType = 0 | 1 | 2 | 3 | 4 | 5
 
 type RatingPropsType = {
-    value: RatingValueTape
-    onClick: (value: RatingValueTape) => void
+    value: RatingValueType
+    onClick: (value: RatingValueType) => void
 }
 
 
 export function Rating(props:RatingPropsType) {
-    debugger
     return (
         <div>
             <Star selected = {props.value > 0} onClick = {props.onClick} value = {1} />
@@ -23,8 +22,8 @@ export function Rating(props:RatingPropsType) {
 
 type StarPropsType = {
     selected: boolean
-    value: RatingValueTape
-    onClick: (value: RatingValueTape) => void
+    value: RatingValueType
+    onClick: (value: RatingValueType) => void
 }
 
 function Star(props:StarPropsType) {

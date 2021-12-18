@@ -21,7 +21,6 @@ type AccordionTitlePropsType ={
     onClick: () => void
 }
 function AccordionTitle(props:AccordionTitlePropsType) {
-    debugger
     return(
             <h3 onClick={() => props.onClick()}>-- {props.title} --</h3>
     )
@@ -29,7 +28,6 @@ function AccordionTitle(props:AccordionTitlePropsType) {
 
 
 function AccordionBody() {
-    debugger
     return (
             <ul>
                 <li>1</li>

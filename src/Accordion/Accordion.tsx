@@ -1,12 +1,19 @@
 import React from "react";
-type AccordionPropsType ={
+import {RatingValueType} from "../components/Rating/Rating";
+
+export type AccordionBooleanType = boolean
+
+export type AccordionPropsType ={
     AccTitle: string
-    collapsed: boolean
+    collapsed: AccordionBooleanType
+    setCollapsed: ( collapsed: AccordionBooleanType) => void
+
 }
 function Accordion(props:AccordionPropsType) {
+    debugger
     return (
         <div>
-            <AccordionTitle title={props.AccTitle} />
+            <AccordionTitle title={props.AccTitle} onClick={()=> {props.setCollapsed(!props.collapsed)}}/>
             {!props.collapsed && <AccordionBody />}
         </div>
     )}
@@ -14,16 +21,15 @@ function Accordion(props:AccordionPropsType) {
 
 type AccordionTitlePropsType ={
     title: string
+    onClick: () => void
 }
 function AccordionTitle(props:AccordionTitlePropsType) {
-    debugger
     return(
-            <h3>{props.title}</h3>
+            <h3 onClick={() => props.onClick()}>{props.title}</h3>
     )
 }
 
 function AccordionBody() {
-    debugger
     return (
             <ul>
                 <li>1</li>
