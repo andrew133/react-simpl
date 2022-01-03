@@ -1,14 +1,13 @@
 import React, {useState} from "react";
 import s from './OnOff.module.css';
 
-type OnOffType = {
-    //on: boolean
+export type UncontrolledOnOff = {
+    onChange: (one: boolean) => void
 }
 
-function OnOff(props:OnOffType) {
+function UncontrolledOnOff(props: UncontrolledOnOff) {
 
     let [on, seton] = useState(false)
-
 
     const onStyle = {
         width: "40px",
@@ -36,13 +35,26 @@ function OnOff(props:OnOffType) {
         marginLeft: "5px",
         backgroundColor: on ? "green" : "red",
     };
+    const onClicked = () => {
+        seton(true)
+        props.onChange(true)
+    }
+    const ofClicked = () => {
+        seton(false)
+        props.onChange(false)
+    }
 
-    return (
-        <div>
-            <div style={onStyle} onClick={() => {seton(true)}}>On</div>
-            <div style={ofStyle} onClick={() => {seton(false)}}>Off</div>
-            <div style={indicatorStyle}></div>
+return (
+    <div>
+        <div style={onStyle} onClick={onClicked}>On</div>
+        <div style={ofStyle}
+             onClick={() => {
+                 seton(false)
+                 props.onChange(false)
+             }}>Off
         </div>
-    )
+        <div style={indicatorStyle}></div>
+    </div>
+)
 }
-export default OnOff;
+export default UncontrolledOnOff;
