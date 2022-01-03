@@ -2,23 +2,29 @@ import React, {useState} from 'react';
 import './App.css';
 import {Rating, RatingValueType} from "./components/Rating/Rating";
 import {UncontrolledRating} from "./components/Rating/UncontrolledRating";
-import Accordion, {AccordionBooleanType} from "./Accordion/Accordion";
+import Accordion from "./Accordion/Accordion";
+import OnOff from "./components/OnOff/OnOff";
+
 
 
 
 function App() {
 
     let [ratingValue, setratingValue] = useState<RatingValueType>(0)
-    let [acardionCollapsed, setAcardionCollapsed] = useState<AccordionBooleanType>(false)
+    let [acardionCollapsed, setAcardionCollapsed] = useState<boolean>(false);
+    let [switchOn, setswitchOn] = useState<boolean>(false);
 
 
     return (
         <div className={"App"}>
 
-            <Accordion AccTitle={"Menu"} collapsed={acardionCollapsed} setCollapsed={setAcardionCollapsed}/>
+            <Accordion AccTitle={"Menu"}
+                       collapsed={acardionCollapsed}
+                       oneChange={()=> setAcardionCollapsed(!acardionCollapsed)}/>
 
 
-            {/*<OnOff />*/}
+            <OnOff on={switchOn} onChange={setswitchOn}/>
+
             {/*<Rating value = {ratingValue} onClick = {setratingValue} />*/}
             {/*<UncontrolledAccordion AccTitle={"Menu"}/>*/}
 
